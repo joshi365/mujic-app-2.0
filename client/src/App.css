@@ -1,0 +1,282 @@
+/********************
+    Function Css
+********************/
+/********************
+    Global Css
+********************/
+/***********************************
+            Global Reset             
+***********************************/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+}
+
+/********************
+    Typography scss
+********************/
+@font-face {
+  font-family: Quicksand-Bold;
+  src: url("./Assets/fonts/Quicksand-Bold.ttf");
+}
+
+@font-face {
+  font-family: Quicksand-Light;
+  src: url("./Assets/fonts/Quicksand-Light.ttf");
+}
+
+@font-face {
+  font-family: Quicksand-Medium;
+  src: url("./Assets/fonts/Quicksand-Medium.ttf");
+}
+
+@font-face {
+  font-family: Quicksand-Regular;
+  src: url("./Assets/fonts/Quicksand-Regular.ttf");
+}
+
+@font-face {
+  font-family: Quicksand-SemiBold;
+  src: url("./Assets/fonts/Quicksand-SemiBold.ttf");
+}
+
+/*****************************************************************************************************
+                                       LOGIN PAGE SASS
+  *****************************************************************************************************/
+.fontColor {
+  color: #f5f507;
+}
+
+.main-login-div {
+  text-align: center;
+  background: url("./Assets/images/back_img.jpg");
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.header-text {
+  color: #fff;
+  font-family: "Quicksand-Bold";
+  font-size: 4.16667vw;
+  letter-spacing: 3px;
+}
+
+.mid-text {
+  font-family: "Quicksand-Medium";
+  color: #ffffff;
+  font-size: 2.60417vw;
+  letter-spacing: 0.05208vw;
+}
+
+.normal-text {
+  font-family: "Quicksand-Regular";
+  color: #ffffff;
+  font-size: 1.82292vw;
+  letter-spacing: 0.05208vw;
+}
+
+.login-button {
+  width: 17%;
+  border-radius: 1.04167vw;
+  height: 3.38542vw;
+  border: none;
+  border: 0.05208vw solid red;
+  background-color: #23d954;
+  font-family: "Quicksand-Regular";
+  font-size: 1.82292vw;
+  outline: none !important;
+}
+
+.login-button:hover {
+  opacity: 0.8;
+  outline: none;
+}
+
+.input-login {
+  width: 40%;
+  border-radius: 1.5625vw;
+  border: 0.15625vw solid #fa3802;
+  height: 3.38542vw;
+  outline: none;
+}
+
+.input-login::-webkit-input-placeholder {
+  font-family: "Quicksand-Regular";
+  font-size: 1.30208vw;
+  padding: 1.04167vw;
+  color: #0a0a0a;
+}
+
+.input-login:-ms-input-placeholder {
+  font-family: "Quicksand-Regular";
+  font-size: 1.30208vw;
+  padding: 1.04167vw;
+  color: #0a0a0a;
+}
+
+.input-login::-ms-input-placeholder {
+  font-family: "Quicksand-Regular";
+  font-size: 1.30208vw;
+  padding: 1.04167vw;
+  color: #0a0a0a;
+}
+
+.input-login::placeholder {
+  font-family: "Quicksand-Regular";
+  font-size: 1.30208vw;
+  padding: 1.04167vw;
+  color: #0a0a0a;
+}
+
+input[type="text"],
+[type="password"],
+[type="email"],
+select.form-control {
+  text-align: center;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  font-family: "Quicksand-Medium";
+  padding: 1.04167vw;
+  font-size: 1.5625vw;
+}
+
+.center-div {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -60%);
+          transform: translate(-50%, -60%);
+}
+
+/*****************************************************************************************************
+                                       LOGIN PAGE MEDIA QUERY
+  *****************************************************************************************************/
+@media (max-width: 800px) {
+  .login-button {
+    border-radius: 8vw;
+    height: 10.66667vw;
+    font-size: 4vw;
+    width: 80%;
+  }
+  .input-login {
+    border-radius: 6.66667vw;
+    height: 13.33333vw;
+    width: 90%;
+  }
+  .input-login::-webkit-input-placeholder {
+    font-size: 15px;
+    padding: 10px;
+  }
+  .input-login:-ms-input-placeholder {
+    font-size: 15px;
+    padding: 10px;
+  }
+  .input-login::-ms-input-placeholder {
+    font-size: 15px;
+    padding: 10px;
+  }
+  .input-login::placeholder {
+    font-size: 15px;
+    padding: 10px;
+  }
+  input[type="text"],
+  [type="password"],
+  select.form-control {
+    padding: 2.66667vw;
+    font-size: 4.53333vw;
+  }
+  .header-text {
+    font-size: 9.33333vw;
+    letter-spacing: 0.8vw;
+  }
+  .mid-text {
+    font-size: 7.2vw;
+  }
+  .normal-text {
+    font-size: 4.53333vw;
+  }
+}
+/*# sourceMappingURL=App.css.map */

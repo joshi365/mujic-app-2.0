@@ -1,0 +1,131 @@
+/*****************************************************************************************************
+                                       LOGIN PAGE SASS
+  *****************************************************************************************************/
+
+.fontColor {
+  color: #f5f507;
+}
+
+.main-login-div {
+  text-align: center;
+  background: url("./Assets/images/back_img.jpg");
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+.header-text {
+  color: #fff;
+  font-family: "Quicksand-Bold";
+  font-size: vw(80px);
+  letter-spacing: 3px;
+}
+
+.mid-text {
+  font-family: "Quicksand-Medium";
+  color: #ffffff;
+  font-size: vw(50px);
+  letter-spacing: vw(1px);
+}
+
+.normal-text {
+  font-family: "Quicksand-Regular";
+  color: #ffffff;
+  font-size: vw(35px);
+  letter-spacing: vw(1px);
+}
+
+.login-button {
+  width: 17%;
+  border-radius: vw(20px);
+  height: vw(65px);
+  border: none;
+  border: vw(1px) solid red;
+  background-color: #23d954;
+  font-family: "Quicksand-Regular";
+  font-size: vw(35px);
+  outline: none !important;
+}
+
+.login-button:hover {
+  opacity: 0.8;
+  outline: none;
+}
+
+.input-login {
+  width: 40%;
+  border-radius: vw(30px);
+  border: vw(3px) solid #fa3802;
+  height: vw(65px);
+  outline: none;
+}
+
+.input-login::placeholder {
+  font-family: "Quicksand-Regular";
+  font-size: vw(25px);
+  padding: vw(20px);
+  color: #0a0a0a;
+}
+
+input[type="text"],
+[type="password"],
+[type="email"],
+select.form-control {
+  text-align: center;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  font-family: "Quicksand-Medium";
+  padding: vw(20px);
+  font-size: vw(30px);
+}
+
+.center-div {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -60%);
+}
+/*****************************************************************************************************
+                                       LOGIN PAGE MEDIA QUERY
+  *****************************************************************************************************/
+
+@media (max-width: 800px) {
+  .login-button {
+    border-radius: mvw(30px);
+    height: mvw(40px);
+    font-size: mvw(15px);
+    width: 80%;
+  }
+
+  .input-login {
+    border-radius: mvw(25px);
+    height: mvw(50px);
+    width: 90%;
+  }
+
+  .input-login::placeholder {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  input[type="text"],
+  [type="password"],
+  select.form-control {
+    padding: mvw(10px);
+    font-size: mvw(17px);
+  }
+
+  .header-text {
+    font-size: mvw(35px);
+    letter-spacing: mvw(3px);
+  }
+
+  .mid-text {
+    font-size: mvw(27px);
+  }
+  .normal-text {
+    font-size: mvw(17px);
+  }
+}
+// f5f507
